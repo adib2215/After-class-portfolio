@@ -5,6 +5,10 @@
     box-sizing: border-box;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 nav {
     height: 60px;
     background-color: #f1f1f1;
@@ -161,4 +165,90 @@ nav {
 
 .banner-icon a:hover {
     cursor: pointer;
+}
+
+.section-title {
+    text-align: center;
+    font-size: 36px;
+    font-weight: 600;
+    margin-bottom: 28px;
+    color: #222;
+}
+
+.about-section {
+    padding-top: 60px;
+    background-color: #fafafa;
+}
+
+.about-container {
+    display: flex;
+    align-items: start;
+    justify-content: center;
+    gap: 40px;
+    flex-wrap: wrap;
+    max-width: 1100px;
+    margin: auto;
+}
+
+.about-img {
+    width: 360px;
+    height: 340px;
+    object-fit: cover;
+    border-radius: 12px;
+    border: 6px solid #333;
+    box-shadow: 0px 4px 12px rgba (0, 0, 0, 0.15)
+}
+
+.about-text {
+    flex: 1;
+    min-width: 280px;
+    font-size: 18px;
+    line-height: 1.6;
+    color: #444;
+}
+
+.skills-section {
+    padding-top: 80px;
+    padding-bottom: 32px;
+    background-color: #fff;
+}
+
+.skills-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 24px;
+    max-width: 1100px;
+    margin: auto;
+}
+
+.skill-card {
+    background: #f9f9f9;
+    padding: 28px 20px;
+    text-align: center;
+    border-radius: 12px;
+    box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.skill-card:hover {
+    transsform: translateY(-6px);
+    box-shadow: 0px 6px 14px rgba(0, 0, 0, 0.15);
+}
+
+.skill-card i {
+    font-size: 48px;
+    margin-bottom: 14px;
+    color: #000;
+}
+
+.skill-card h3 {
+    font-size: 22px;
+    margin-bottom: 8px;
+    font-weight: 600;
+}
+
+.skill-card p {
+    font-size: 16px;
+    color: #555;
+    line-height: 1.4;
 }
