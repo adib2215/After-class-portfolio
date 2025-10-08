@@ -254,7 +254,7 @@ nav {
 }
 
 .projects-section {
-    padding: 720px 20px 0 20px;
+    padding: 72px 20px 0 20px;
 }
 
 .project-container {
@@ -315,6 +315,109 @@ nav {
     background: #fff;
     color: #000;
     border: 2px solid #000;
+}
+
+.contact-section {
+    padding: 68px 20px 0 20px;
+    background-color: #fff;
+}
+
+.contact-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    max-width: 1100px;
+    margin: auto;
+}
+
+.contact-info {
+    flex: 1;
+    min-width: 260px;
+    font-size: 18px;
+    color: #444;
+    line-height: 1.8;
+    height: 400px;
+    padding: 20px;
+    border: 3px solid #232323;
+    border-radius: 10px;
+}
+
+.contact-info p {
+    padding: 20px;
+    border: 1.5px solid #232323;
+    border-radius: 14px;
+    margin-bottom: 14px;
+}
+
+.contact-info i {
+    margin-right: 10px;
+    color: #000;
+}
+
+.contact-social {
+    margin-top: 14px;
+    font-size: 28px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 16px;
+    font-size: 36px;
+    margin-top: 28px;
+}
+
+.contact-social a {
+    color: #000;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.contact-social a:hover {
+    color: #555
+}
+
+.contact-form {
+    flex: 1;
+    min-width: 280px;
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+    height: 400px;
+    padding: 20px;
+    border: 3px solid #232323;
+    border-radius: 10px;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 12px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+}
+
+.contact-form button {
+    padding: 12px;
+    background: #000;
+    color: #fff;
+    border: none;
+    font-size: 16px;
+    font-weight: 500;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.contact-form button:hover {
+    background: #fff;
+    color: #000;
+    border: 2px solid #000;
+}
+
+footer {
+    padding: 20px;
 }
 
 @media (max-width: 640px) {
@@ -384,6 +487,51 @@ nav {
     }
     .skill-card {
         padding: 20px 14px;
+    }
+
+    .projects-section {
+        padding: 40px 10px;
+    }
+
+    .project-container {
+        grid-template-columns: 1fr !important;
+    }
+
+    .project-card {
+        margin-bottom: 16px;
+    }
+
+    .project-card img {
+        height: 160px;
+    }
+
+    .btn-project {
+        padding: 8px 14px;
+        font-size: 14px;
+    }
+
+    .contact-section {
+        padding: 0px;
+    }
+
+    .contact-info {
+        font-size: 16px;
+        text-align: center;
+    }
+
+    .contact-social {
+        font-size: 24px;
+    }
+
+    .contact-form input,
+    .contact-form textarea {
+        font-size: 15px;
+        padding: 10px;
+    }
+
+    .contact-form button {
+        font-size: 15px;
+        padding: 10px;
     }
 }
 
