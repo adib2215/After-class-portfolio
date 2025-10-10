@@ -568,4 +568,70 @@ footer {
     .banner-container {
         flex-direction: column;
     }
+
+    .section-title {
+        margin-bottom: 28px;
+    }
+
+    .about-section {
+        padding-top: 14px;
+        background-color: #fafafa;
+    }
+
+    .about-container {
+        flex-direction: column;
+        align-items: center;
+        gap: 28px;
+    }
+
+    .about-text {
+        padding: 0 28px;
+    }
+
+    .skills-section {
+        padding-top: 14px;
+        background-color: #fff;
+    }
+
+    .skills-container {
+        padding: 0 28px;
+    }
+
+    .skill-card{
+        padding: 28px 20px;
+    }
+
+    .projects-section {
+        padding: 40px 8px;
+    }
+
+    .project-container {
+        grid-template-columns: 1fr 1fr;
+        gap: 20px;
+        padding: 0 20px;
+    }
+
+    .project-card h3 {
+        font-size: 20px;
+    }
+
+    .project-card p {
+        font-size: 15px;
+    }
+
+    .contact-section {
+        padding: 0 20px;
+    }
+
+    .contact-container {
+        flex-direction: column;
+        align-items: center;
+        gap: 28px;
+    }
+
+    .contact-info,
+    .contact-form {
+        width: 100%;
+        max-width: 500px;
+    }
 }
