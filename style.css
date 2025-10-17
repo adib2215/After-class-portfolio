@@ -12,7 +12,7 @@ html {
 nav {
     height: 60px;
     background-color: #f1f1f1;
-    box-shadow: 1px 2px 4px #12121238;
+    box-shadow: 1px 2px 4px #12121230;
     padding: 0 14px;
     display: flex;
     align-items: center;
@@ -27,13 +27,13 @@ nav {
 }
 
 .nav-profile-head h1 {
-    font-size: 24px;
+    font-size: 32px;
     font-weight: 600;
 }
 
 .nav-profile {
     height: 40px;
-    width:40px;
+    width: 40px;
     object-fit: contain;
     border-radius: 50%;
     border: 2px solid #3f3f3f;
@@ -49,11 +49,12 @@ nav {
 
 .nav-item li a {
     text-decoration: none;
-    color:#222;
+    color: #222;
     padding: 8px 10px;
     font-weight: 500;
     transition: 0.3s;
     border-radius: 6px;
+    font-size: 18px;
 }
 
 .nav-item li a:hover {
@@ -69,10 +70,11 @@ nav {
 
 .banner-container {
     display: flex;
+    flex-direction: row;
     align-items: center;
     justify-content: center;
     gap: 56px;
-    margin: 32px 12px;
+    margin: 46px 0;
 }
 
 .banner-img {
@@ -112,7 +114,7 @@ nav {
     align-items: center;
     justify-content: center;
     gap: 16px;
-    margin-top: 10px;
+    margin-top: 12px;
 }
 
 .btn-view {
@@ -126,8 +128,8 @@ nav {
 }
 
 .btn-download {
-    background-color: #000;
     color: #fff;
+    background-color: #000;
     border: 2px solid #000;
     padding: 10px 14px;
     font-size: 16px;
@@ -143,8 +145,8 @@ nav {
 }
 
 .btn-download:hover {
-    color: #000;
     background-color: #fff;
+    color: #000;
     cursor: pointer;
     transition: 0.3s;
 }
@@ -166,6 +168,7 @@ nav {
 .banner-icon a:hover {
     cursor: pointer;
 }
+
 
 .section-title {
     text-align: center;
@@ -196,7 +199,7 @@ nav {
     object-fit: cover;
     border-radius: 12px;
     border: 6px solid #333;
-    box-shadow: 0px 4px 12px rgba (0, 0, 0, 0.15)
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
 }
 
 .about-text {
@@ -205,11 +208,11 @@ nav {
     font-size: 18px;
     line-height: 1.6;
     color: #444;
+    padding: 0px;
 }
 
 .skills-section {
     padding-top: 80px;
-    padding-bottom: 32px;
     background-color: #fff;
 }
 
@@ -219,6 +222,7 @@ nav {
     gap: 24px;
     max-width: 1100px;
     margin: auto;
+    padding: 16px 0 0 0;
 }
 
 .skill-card {
@@ -226,13 +230,13 @@ nav {
     padding: 28px 20px;
     text-align: center;
     border-radius: 12px;
-    box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .skill-card:hover {
-    transsform: translateY(-6px);
-    box-shadow: 0px 6px 14px rgba(0, 0, 0, 0.15);
+    transform: translateY(-6px);
+    box-shadow: 0 6px 14px rgba(0, 0, 0, 0.15);
 }
 
 .skill-card i {
@@ -257,7 +261,7 @@ nav {
     padding: 72px 20px 0 20px;
 }
 
-.project-container {
+.projects-container {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
     gap: 32px;
@@ -270,14 +274,14 @@ nav {
     background: #fff;
     border-radius: 12px;
     overflow: hidden;
-    box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
     text-align: center;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .project-card:hover {
     transform: translateY(-6px);
-    box-shadow: 0px 6px 14px rgba(0, 0, 0, 0.15);
+    box-shadow: 0 6px 14px rgba(0, 0, 0, 0.15);
 }
 
 .project-card img {
@@ -316,6 +320,7 @@ nav {
     color: #000;
     border: 2px solid #000;
 }
+
 
 .contact-section {
     padding: 68px 20px 0 20px;
@@ -374,7 +379,7 @@ nav {
 }
 
 .contact-social a:hover {
-    color: #555
+    color: #555;
 }
 
 .contact-form {
@@ -416,123 +421,129 @@ nav {
     border: 2px solid #000;
 }
 
-footer {
-    padding: 20px;
+
+.footer {
+    background: #f8f9fb;
+    color: #333;
+    border-top: 1px solid #e3e6ea;
+    padding-top: 60px;
+    width: 100%;
+    font-family: 'Poppins', sans-serif;
+    margin-top: 60px;
 }
 
-@media (max-width: 640px) {
-    
-    .banner-img {
-        height: 340px;
-        width: 340px;
-    }
-    .nav-item li a {
-        font-size: 60px;
-    }
-    .banner-container {
-        gap: 24px;
-        margin: 24px 0 0 0;
-    }
-    .banner-head p {
-        font-size: 22px;
-    }
-    .banner-head h1 {
-        font-size: 36px;
-    }
-    .banner-head h2 {
-        font-size: 28px;
-    }
-    .btn-view {
-        font-size: 14px;
-    }
-    .btn-download {
-        font-size: 14px;
-    }
-    .banner-icon {
-        margin-top: 10px;
-        font-size: 34px
-    }
-    .banner-icon a {
-        text-decoration: none;
-        color: #000;
-    }
-    .banner-icon a:hover {
-        cursor: pointer;
-    }
-    .section-title {
-        font-size: 30px;
-        margin-bottom: 20px;
-    }
-    .about-section {
-        padding-top: 20px;
-    }
-    .about-container {
-        gap: 24px;
-    }
-    .about-img {
-        width: 320px;
-        height: 300px;
-    }
-    .about-text {
-        font-size: 18px;
-        padding: 0 20px;
-    }
-    .skills-section {
-        padding-top: 28px;
-    }
-    .skills-container {
-        gap: 28px;
-        margin-top: 20px;
-        padding: 0 28px;
-    }
-    .skill-card {
-        padding: 20px 14px;
-    }
+.footer-row {
+    margin: 0 40px;
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+}
 
-    .projects-section {
-        padding: 40px 10px;
-    }
+.footer-col-head {
+    display: flex;
+    align-items: start;
+    justify-content: start;
+    gap: 80px;
+}
 
-    .project-container {
-        grid-template-columns: 1fr !important;
-    }
+.newsletter {
+    width: 420px;
+}
 
-    .project-card {
-        margin-bottom: 16px;
-    }
+.footer-col h4 {
+    color: #111;
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin-bottom: 15px;
+}
 
-    .project-card img {
-        height: 160px;
-    }
+.footer-col .links {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
 
-    .btn-project {
-        padding: 8px 14px;
-        font-size: 14px;
-    }
+.footer-col .links li {
+    margin-bottom: 10px;
+}
 
-    .contact-section {
-        padding: 0px;
-    }
+.footer-col .links li a {
+    text-decoration: none;
+    color: #555;
+    transition: color 0.3s ease;
+}
 
-    .contact-info {
-        font-size: 16px;
-        text-align: center;
-    }
+.footer-col .links li a:hover {
+    color: #000;
+}
 
-    .contact-social {
-        font-size: 24px;
-    }
+.footer-col p {
+    color: #555;
+    max-width: 320px;
+    margin: 15px 0 20px;
+    line-height: 1.6;
+}
 
-    .contact-form input,
-    .contact-form textarea {
-        font-size: 15px;
-        padding: 10px;
-    }
+.footer-col form {
+    display: flex;
+    gap: 8px;
+    flex-wrap: nowrap;
+}
 
-    .contact-form button {
-        font-size: 15px;
-        padding: 10px;
-    }
+.footer-col input {
+    height: 42px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    padding: 0 10px;
+    flex: 1;
+    outline: none;
+    color: #333;
+    font-size: 0.95rem;
+}
+
+.footer-col input::placeholder {
+    color: #aaa;
+}
+
+.footer-col form button {
+    background: #000;
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    padding: 10px 15px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.footer-col form button:hover {
+    background: #232323;
+}
+
+.footer-col .icons {
+    display: flex;
+    margin-top: 25px;
+    gap: 20px;
+}
+
+.footer-col .icons i {
+    color: #666;
+    font-size: 26px;
+    transition: color 0.3s ease, transform 0.3s ease;
+    cursor: pointer;
+}
+
+.footer-col .icons i:hover {
+    color: #000;
+    transform: translateY(-3px);
+}
+
+.footer-bottom {
+    text-align: center;
+    padding: 24px 0;
+    margin-top: 24px;
+    background-color: #f6f4f4;
+    border-top: 2px solid #eae8e8;
 }
 
 @media (max-width: 768px) {
@@ -541,11 +552,11 @@ footer {
         background: #f1f1f1;
         position: absolute;
         top: 60px;
-        right: 0px;
+        right: 0;
         width: 220px;
         display: none;
         padding: 15px 0;
-        box-shadow: -2px 4px 6px rgba(0, 0, 0, 0.15)
+        box-shadow: -2px 4px 6px rgba(0, 0, 0, 0.15);
     }
 
     .nav-item.show {
@@ -567,6 +578,9 @@ footer {
 
     .banner-container {
         flex-direction: column;
+        gap: 36px;
+        margin: 36px 0;
+
     }
 
     .section-title {
@@ -589,7 +603,7 @@ footer {
     }
 
     .skills-section {
-        padding-top: 14px;
+        padding-top: 40px;
         background-color: #fff;
     }
 
@@ -597,7 +611,7 @@ footer {
         padding: 0 28px;
     }
 
-    .skill-card{
+    .skill-card {
         padding: 28px 20px;
     }
 
@@ -605,7 +619,7 @@ footer {
         padding: 40px 8px;
     }
 
-    .project-container {
+    .projects-container {
         grid-template-columns: 1fr 1fr;
         gap: 20px;
         padding: 0 20px;
@@ -634,4 +648,243 @@ footer {
         width: 100%;
         max-width: 500px;
     }
+
+    .footer {
+        padding-right: 40px;
+        padding-left: 40px;
+    }
+
+    .footer-row {
+        flex-direction: column;
+        align-items: center;
+        margin: 0 20px;
+    }
+
+    .footer-col-head {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 40px;
+        justify-content: center;
+        width: 100%;
+    }
+
+    .newsletter {
+        width: 100%;
+        max-width: 520px;
+        margin-top: 40px;
+        text-align: center;
+    }
+
+    .footer-col form {
+        justify-content: center;
+    }
+
+    .footer-col .icons {
+        justify-content: center;
+    }
+
+}
+
+
+
+@media (max-width: 640px) {
+
+    .banner-img {
+        height: 340px;
+        width: 340px;
+    }
+
+    .nav-item li a {
+        font-size: 16px;
+    }
+
+    .banner-container {
+        gap: 24px;
+        margin: 24px 0 0 0;
+    }
+
+    .banner-head p {
+        font-size: 22px;
+    }
+
+    .banner-head h1 {
+        font-size: 36px;
+    }
+
+    .banner-head h2 {
+        font-size: 28px;
+    }
+
+    .btn-view {
+        font-size: 14px;
+    }
+
+    .btn-download {
+        font-size: 14px;
+    }
+
+    .banner-icon {
+        margin-top: 10px;
+        font-size: 34px;
+    }
+
+    .banner-icon a {
+        text-decoration: none;
+        color: #000;
+    }
+
+    .banner-icon a:hover {
+        cursor: pointer;
+    }
+
+    .section-title {
+        font-size: 30px;
+        margin-bottom: 20px;
+    }
+
+    .about-section {
+        padding-top: 20px;
+    }
+
+    .about-container {
+        gap: 24px;
+
+    }
+
+    .about-img {
+        width: 320px;
+        height: 300px;
+    }
+
+    .about-text {
+        font-size: 18px;
+        padding: 0 20px;
+    }
+
+    .skills-section {
+        padding-top: 28px;
+    }
+
+    .skills-container {
+        gap: 28px;
+        margin-top: 20px;
+        padding: 0 28px;
+    }
+
+    .skill-card {
+        padding: 20px 14px;
+    }
+
+    .projects-section {
+        padding: 40px 10px;
+    }
+
+    .projects-container {
+        grid-template-columns: 1fr !important;
+
+    }
+
+    .project-card {
+        margin-bottom: 16px;
+    }
+
+    .project-card img {
+        height: 160px;
+    }
+
+    .btn-project {
+        padding: 8px 14px;
+        font-size: 14px;
+    }
+
+    .contact-section {
+        padding: 0px 24px;
+    }
+
+    .contact-info {
+        font-size: 16px;
+        text-align: center;
+    }
+
+    .contact-social {
+        font-size: 24px;
+    }
+
+    .contact-form input,
+    .contact-form textarea {
+        font-size: 15px;
+        padding: 10px;
+    }
+
+    .contact-form button {
+        font-size: 15px;
+        padding: 10px;
+    }
+
+    .footer {
+        padding-top: 28px;
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    .footer-row {
+        margin: 0 16px;
+    }
+
+    .footer-col-head {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 24px 16px;
+        width: 100%;
+    }
+
+    .footer-col {
+        min-width: 140px;
+    }
+
+    .footer-col h4 {
+        font-size: 1.1rem;
+        margin-bottom: 10px;
+        text-align: center;
+    }
+
+    .footer-col .links li {
+        text-align: center;
+    }
+
+    .newsletter {
+        width: 100%;
+        max-width: 100%;
+        margin-top: 40px;
+        text-align: center;
+    }
+
+    .newsletter p {
+        max-width: 90%;
+        margin: 10px auto 20px;
+        font-size: 0.95rem;
+    }
+
+    .newsletter form {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .newsletter input {
+        width: 90%;
+    }
+
+    .newsletter form button {
+        width: 90%;
+    }
+
+    .footer-col .icons {
+        justify-content: center;
+    }
+
+    .footer-bottom p {
+        font-size: 0.9rem;
+    }
+
 }
